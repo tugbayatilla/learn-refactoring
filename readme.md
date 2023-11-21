@@ -1,34 +1,8 @@
 # Learn Typescript
 
-## Development Environment
+## Refactoring Techniques
 
-> node must be installed first
+### Message Chains: 
 
-```sh
-# installs typescript globally
-npm i -g typescript
-```
-
-```sh
-# checks typescript compler version
-tsc -v
-```
-
-```sh
-# creates tsconfig.json
-tsc --init
-```
-
-## How to Compile Typescript Code to Javascript
-
-```sh
-# compiles to javascript
-tsc index.ts
-```
-
-## How to Run Javascript Code
-
-```sh
-# runs javascript file
-node ./dist/index.js
-```
+Occurs when a client asks one object for another object, which the client then asks for another object, and so on. 
+This creates tight coupling and violates the law of Demeter.
